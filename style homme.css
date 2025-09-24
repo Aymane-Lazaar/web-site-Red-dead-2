@@ -1,0 +1,253 @@
+*{
+    font-family: system-ui;
+}
+body{
+    background-image: url(characters/sadie\ adler2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+section{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.00); */
+    font-family: sans-serif;
+    position: relative;
+}
+section ul{
+    display: flex;
+    height: fit-content;
+}
+section::before{
+    content: "";
+    background-image: url(characters/Arthur\ Morgan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 51%;
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+    opacity: 0.95;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase; 
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding: 6px 15px;
+    display: inline-block;
+    transition: 0.5s;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+ul li{
+    list-style-type: none; 
+    margin: 14px 16px;
+    
+}
+ul:hover li a{
+    opacity: 0;
+}
+ul li a:hover{
+    background-color: darkmagenta;
+    transform: scale(1.5);
+    opacity: 1;
+}
+ul li::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 50px;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* arthuer */
+ul .img1::after{
+    text-align: center;
+    background-image: url(characters/Arthur\ Morgan.jpg);
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img1:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+    word-spacing: 5px;
+}
+/* DUtch */
+ul .img2::after{
+    text-align: center;
+    background-image: url(characters/Dutch\ Van\ der\ Linde.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img2:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+    word-spacing: 5px;
+}
+/* micah */
+ul .img3::after{
+    text-align: center;
+    background-image: url(characters/micah.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img3:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+/* uncle */
+ul .img4::after{
+    text-align: center;
+    background-image: url(characters/uncle.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img4:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+/* sadie */
+ul .img5::after{
+    text-align: center;
+    background-image: url(characters/Sadie\ Adler.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img5:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+/* john */
+ul .img6::after{
+    text-align: center;
+    background-image: url(characters/John\ Marston.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img6:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+/* abigail */
+ul .img7::after{
+    text-align: center;
+    background-image: url(characters/Abigail\ Roberts.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img7:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+/* charles */
+ul .img8::after{
+    text-align: center;
+    background-image: url(characters/Charles\ Smith.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+ul .img8:hover:after{
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    opacity: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}

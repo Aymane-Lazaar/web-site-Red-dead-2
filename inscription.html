@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const app = document.getElementById("app");
+
+        // Create a container
+        const container = document.createElement("div");
+        container.className = "container mt-5";
+
+        // Title
+        const title = document.createElement("h2");
+        title.className = "mb-4 text-center";
+        title.innerText = "Inscription";
+        container.appendChild(title);
+
+        // Create form
+        const form = document.createElement("form");
+
+        // First name
+        const firstNameGroup = document.createElement("div");
+        firstNameGroup.className = "mb-3";
+        firstNameGroup.innerHTML = `
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" placeholder="Enter first name">
+        `;
+        form.appendChild(firstNameGroup);
+
+        // Last name
+        const lastNameGroup = document.createElement("div");
+        lastNameGroup.className = "mb-3";
+        lastNameGroup.innerHTML = `
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" placeholder="Enter last name">
+        `;
+        form.appendChild(lastNameGroup);
+
+        // Email
+        const emailGroup = document.createElement("div");
+        emailGroup.className = "mb-3";
+        emailGroup.innerHTML = `
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="Enter email">
+        `;
+        form.appendChild(emailGroup);
+
+        // Password
+        const passwordGroup = document.createElement("div");
+        passwordGroup.className = "mb-3";
+        passwordGroup.innerHTML = `
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" placeholder="Enter password">
+        `;
+        form.appendChild(passwordGroup);
+
+        // Age
+        const ageGroup = document.createElement("div");
+        ageGroup.className = "mb-3";
+        ageGroup.innerHTML = `
+            <label class="form-label">Age</label>
+            <input type="number" class="form-control" placeholder="Enter age">
+        `;
+        form.appendChild(ageGroup);
+
+        // Submit Button
+        const submitBtn = document.createElement("button");
+        submitBtn.className = "btn btn-primary w-100";
+        submitBtn.type = "submit";
+        submitBtn.textContent = "Register";
+        form.appendChild(submitBtn);
+
+        // Append form to container
+        container.appendChild(form);
+
+        // Append container to app
+        app.appendChild(container);
+
+        // Optional: Handle form submit
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Inscription réussie !");
+        });
+    </script>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
